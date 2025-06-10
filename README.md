@@ -50,7 +50,7 @@ White-box testing:
 - Đảm bảo bao phủ điều kiện, vòng lặp trong xử lý logic
 
 Non-functional testing:
-- Kiểm thử hiệu năng, tải, stress
+- Kiểm thử hiệu năng
 - Kiểm thử bảo mật (thanh toán, thông tin cá nhân)
 - Kiểm thử khả năng hiển thị tốt trên thiết bị di động (responsive)
 
