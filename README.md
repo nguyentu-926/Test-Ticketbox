@@ -13,7 +13,7 @@
 - Đặt vé, lưu vé, lịch sử giao dịch
 - Tìm kiếm, phân loại theo loại sự kiện, thời gian, địa điểm
 - Bảo mật thông tin cá nhân và thanh toán
-- Phân quyền người dùng: người mua vé, nhà tổ chức, quản trị viên
+- Phân quyền người dùng: người dùng(người mua vé, nhà tổ chức), quản trị viên
 ## Mục tiêu và đối tượng hướng tới của ứng dụng
 Ứng dụng web bán vé sự kiện được thiết kế với mục tiêu mang đến trải nghiệm đặt vé dễ dàng, nhanh chóng và an toàn cho người dùng. Giao diện thân thiện, hỗ trợ truy cập mọi lúc, mọi nơi trên các thiết bị.
 Ứng dụng hướng tới:
@@ -41,7 +41,7 @@ Black-box testing:
 - Chức năng đăng nhập / đăng ký
 - CRUD sự kiện
 - Mua vé, hủy vé, kiểm tra vé
-- Phân quyền người dùng (người tham dự / nhà tổ chức / admin)
+- Phân quyền người dùng (user(người mua vé, nhà tổ chức) / admin)
 - Tìm kiếm và phân loại sự kiện
 
 White-box testing:
