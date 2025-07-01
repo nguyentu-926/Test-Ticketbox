@@ -47,11 +47,11 @@ Non-functional testing:
 - Kiểm thử bảo mật (thanh toán, thông tin cá nhân)
 - Kiểm thử khả năng hiển thị tốt trên thiết bị di động (responsive)
 
-##Link báo cáo và slide
+## Link báo cáo và slide
 - Báo cáo: https://docs.google.com/document/d/1kKh8F4YFMvZGt9--9kPuHdJDIvuO3BBbVFZOQ-DBBiA/edit?usp=sharing
 - Link slide: https://www.canva.com/design/DAGr6uogr4Y/qi6L-f6aTqxIE4GkiS2xFA/edit?utm_content=DAGr6uogr4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-##Thành viên:
+## Thành viên:
 - Phạm Thị Vân Anh - 22010048
 - Trần Thị Thùy Trang - 22010294
 - Nguyễn Thị Cẩm Tú - 22010230
