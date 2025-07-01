@@ -3,9 +3,7 @@
 Đề tài này tập trung vào việc phát triển một ứng dụng web cho phép người dùng tìm kiếm, đặt mua và quản lý vé tham gia các sự kiện trực tuyến. Ứng dụng không chỉ cung cấp nền tảng kết nối giữa nhà tổ chức sự kiện và khách tham dự mà còn tạo ra một hệ sinh thái hiện đại, thuận tiện trong việc khám phá các sự kiện giải trí, hội thảo, triển lãm,... Với giao diện thân thiện, dễ sử dụng cùng các tính năng như đặt vé, thanh toán, đánh giá sự kiện, quản lý vé cá nhân, ứng dụng hướng tới việc xây dựng một cộng đồng năng động yêu thích trải nghiệm sự kiện. Đồng thời, đề tài cũng đề xuất các giải pháp kỹ thuật hiện đại như tích hợp cơ sở dữ liệu linh hoạt, hệ thống phân loại sự kiện thông minh và đảm bảo an toàn dữ liệu, nhằm mang đến trải nghiệm tối ưu cho người dùng.
 
 ## Công nghệ sử dụng
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js
-- CSDL: MySQL
+- APACHE JMETER, POSTMAN, SELENIUM IDE 
 ## Chức năng xây dựng
 - Đăng nhập, đăng kí
 - Quản lí tài khoản người dùng
@@ -44,13 +42,17 @@ Black-box testing:
 - Phân quyền người dùng (user / nhà tổ chức sự kiện / admin)
 - Tìm kiếm và phân loại sự kiện
 
-White-box testing:
-- Kiểm thử đơn vị (unit test) các module xử lý vé, thanh toán
-- Kiểm thử xử lý ngoại lệ (exception)
-- Đảm bảo bao phủ điều kiện, vòng lặp trong xử lý logic
-
 Non-functional testing:
 - Kiểm thử hiệu năng
 - Kiểm thử bảo mật (thanh toán, thông tin cá nhân)
 - Kiểm thử khả năng hiển thị tốt trên thiết bị di động (responsive)
+
+##Link báo cáo và slide
+- Báo cáo: https://docs.google.com/document/d/1kKh8F4YFMvZGt9--9kPuHdJDIvuO3BBbVFZOQ-DBBiA/edit?usp=sharing
+- Link slide: https://www.canva.com/design/DAGr6uogr4Y/qi6L-f6aTqxIE4GkiS2xFA/edit?utm_content=DAGr6uogr4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+##Thành viên:
+- Phạm Thị Vân Anh - 22010048
+- Trần Thị Thùy Trang - 22010294
+- Nguyễn Thị Cẩm Tú - 22010230
 
