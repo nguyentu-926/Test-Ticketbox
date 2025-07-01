@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "9cea5875-1b36-4af8-9b40-bd02d07275de",
+		"name": "TicketBox Functional Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46040427",
+		"_collection_link": "https://kf-9-1807313.postman.co/workspace/KF-9's-Workspace~a8627838-878f-4d8e-8df2-06c28024badd/collection/46040427-9cea5875-1b36-4af8-9b40-bd02d07275de?action=share&source=collection_link&creator=46040427"
+	},
+	"item": [
+		{
+			"name": "Truy cập trang chủ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Trang chủ trả về thành công\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ticketbox.vn/",
+					"protocol": "https",
+					"host": [
+						"ticketbox",
+						"vn"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tìm kiếm sự kiện",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Kết quả tìm kiếm có phản hồi\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.text()).to.include(\"mùa hè rực sáng\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ticketbox.vn/search?q=m%C3%B9a%20h%C3%A8%20r%E1%BB%B1c%20s%C3%A1ng",
+					"protocol": "https",
+					"host": [
+						"ticketbox",
+						"vn"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "m%C3%B9a%20h%C3%A8%20r%E1%BB%B1c%20s%C3%A1ng"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Truy cập sự kiện",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Chi tiết sự kiện trả về thành công\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.text()).to.include(\"mùa hè rực sáng\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ticketbox.vn/concert-superfest-20225-24149?utm_medium=sr-m%C3%B9a+h%C3%A8+r%E1%BB%B1c+s%C3%A1ng_all-dates_all-prices&utm_source=tkb-search-results",
+					"protocol": "https",
+					"host": [
+						"ticketbox",
+						"vn"
+					],
+					"path": [
+						"concert-superfest-20225-24149"
+					],
+					"query": [
+						{
+							"key": "utm_medium",
+							"value": "sr-m%C3%B9a+h%C3%A8+r%E1%BB%B1c+s%C3%A1ng_all-dates_all-prices"
+						},
+						{
+							"key": "utm_source",
+							"value": "tkb-search-results"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"your_email@example.com\",\r\n  \"password\": \"your_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ticketbox.vn/my-account/my-profile/_",
+					"protocol": "https",
+					"host": [
+						"ticketbox",
+						"vn"
+					],
+					"path": [
+						"my-account",
+						"my-profile",
+						"_"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
